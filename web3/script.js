@@ -41,7 +41,7 @@ function eazy() {
 // 4.3 Массивы
 function mass(){
   let matrice = new Array(3);
-  let sred_znach = 0;
+  let summ = 0;
   for (let i = 0; i < 3; i++) {
       matrice[i] = new Array(3);
         for (let j = 0; j < 3; j++) {
@@ -49,14 +49,14 @@ function mass(){
       }
   }
 
-  for (let i = 1; i < 3; i++) {
+  for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
-      sred_znach += sred_znach + matrice[i][j];
+      summ += + matrice[i][j];
     }
   }
-  sred_znach = sred_znach / 9;
+  sred_znach = summ / 9;
 
-  for (let i = 1; i < 3; i++) {
+  for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
         matrice[i][j] = matrice[i][j] - sred_znach;
     }
