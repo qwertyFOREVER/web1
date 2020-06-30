@@ -1,0 +1,92 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(101, 115, 255), rgb(122, 113, 238), rgb(143, 112, 220), rgb(164, 110, 203), rgb(185, 109, 185), rgb(206, 107, 168), rgb(214, 132, 166), rgb(222, 156, 163), rgb(231, 181, 161), rgb(239, 206, 158), rgb(247, 230, 156), rgb(255, 255, 153));
+}
+
+#wrapper {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    left: 384px;
+    width: 1152px;
+    height: 756px;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0.95;
+}
+
+.main {
+    position: relative;
+    margin-left: 126px;
+    margin-top: 50px;
+    width: 900px;
+    height: 600px;
+}
+
+#game {
+    display: block;
+}
+
+#info {
+    display: none;
+}
+
+#info td {
+    padding: 0;
+}
+
+#info table {
+    border-spacing: 0;
+}
+
+#top {
+    background-color: "#808080";
+    opacity: 0.4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 450;
+    height: 600;
+}
+
+#top:hover {
+    opacity: 1;
+}
+
+#rules {
+    background-color: "#808080";
+    opacity: 0.4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 450;
+    height: 600;
+    font-size: 25px;
+}
+
+#rules:hover {
+    opacity: 1;
+}
+
+.btns {
+    position: relative;
+    margin-left: 126px;
+    margin-top: 30px;
+    margin-right: 0;
+    width: 900px;
+    height: 70px;
+    padding: 0;
+}
+
+.btn {
+    width: calc(25% - 3px);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#gen {
+    width: 100%;
+    font-size: 25px;
+}
+
+#gen td {
+    width: 50%;
+    text-align: center;
+}

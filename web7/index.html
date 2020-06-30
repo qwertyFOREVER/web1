@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Game</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="new_session();">
+    <div id="wrapper">
+
+        <div id="game" class="main">
+            <canvas id="canvas" width="900" height="600" onclick="shoot();" ondblclick="ult();" onmousemove="rotate(event)">
+            </canvas>
+        </div>
+
+        <div id="info" class="main">
+            <table>
+                <tr>
+                    <td>
+                        <div id="top" align="center">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="rules" align="center">
+                            <span><h2>Правила</h2></span>
+                            <p>Добро пожаловать в игру! Здесь есть некоторые правила:<br> 1)У тебя есть 5 жизней. Потеряешь их все - конец игры.<br> 2)В игре есть 4 типа врагов. У каждого своя скорость и количество очков за уничтожение.<br> 3)Скорость врагов
+                                и их количество увеличивается каждые 500 очков. <br> 4)Ты можешь применить "магию" за 500 очков. Все враги будут уничтожены. Двойной клик:)<br> 5)Ядра в пушке не бесконечные. Перезарядка 0.1 с. Ты поймёшь, когда она будет
+                                заряжена снова:)<br>6)Чтобы уничтожить врага, нужно целиться в сердце. Они не очень чувствительны:( <br> Удачной игры!
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btns">
+            <input type="button" id="btn1" class="btn" value="Play" onclick="change_status();">
+            <input type="button" id="btn2" class="btn" value="Restart" onclick="init();">
+            <input type="button" id="btn3" class="btn" value="Change player" onclick="new_session();">
+            <input type="button" id="btn4" class="btn" value="Rules&Records" onclick="change_section();">
+        </div>
+
+    </div>
+</body>
+
+</html>
